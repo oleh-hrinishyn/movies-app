@@ -26,7 +26,8 @@ export const Movies: FC = () => {
             searchParams.delete('search');
             searchParams.append('search', newQuery);
             setSearchParams(searchParams);
-            setTimeout(() => init());
+            // setTimeout(() => init());
+            init();
         },
         [searchParams, setSearchParams, init],
     );
