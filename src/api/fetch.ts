@@ -40,7 +40,6 @@ export const getFetchQuery =
                 ({ signal }) => {
                     const queryParams = new URLSearchParams();
 
-                    console.log('aaa ')
                     Object.entries(queryOptions ?? {}).forEach(([queryKey, value]) => {
                         if ((value !== undefined && value !== null) && value !== '') {
                             queryParams.append(filterMap[queryKey] ? filterMap[queryKey] : queryKey, `${value}`);
